@@ -29,10 +29,10 @@ public class LoginTest {
         // ✅ ADD EXPLICIT WAIT HERE
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("email")))
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("email")))
             .sendKeys("erbjoker6@gmail.com");
 
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("password")))
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("password")))
             .sendKeys("abcdefg");
 
         wait.until(ExpectedConditions.elementToBeClickable(By.id("m_login_signin_submit")))
